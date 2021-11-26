@@ -168,6 +168,8 @@ func generateBlock(oldBlock Block, MEDA int) Block {
 
 	newBlock.Index = oldBlock.Index + 1
 	newBlock.Timestamp = t.String()
+	newBlock.Sender = ""
+	newBlock.Receiver = ""
 	newBlock.MEDA = MEDA
 	newBlock.PrevHash = oldBlock.Hash
 	newBlock.Hash = calculateHash(newBlock)
