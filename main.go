@@ -21,6 +21,8 @@ import (
 type Block struct {
 	Index     int
 	Timestamp string
+	Sender    string
+	Receiver  string
 	MEDA      int
 	Hash      string
 	PrevHash  string
@@ -45,7 +47,7 @@ func main() {
 	go func() {
 		t := time.Now()
 		genesisBlock := Block{}
-		genesisBlock = Block{0, t.String(), 0, calculateHash(genesisBlock), ""}
+		genesisBlock = Block{0, t.String(), "", "", 0, calculateHash(genesisBlock), ""}
 		spew.Dump(genesisBlock)
 
 		mutex.Lock()
