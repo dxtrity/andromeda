@@ -1,2 +1,3 @@
-# andromeda
-🌌 Andromeda is a distributed decentralized blockchain platform
+# Andromeda
+🌌 Andromeda is a distributed decentralized blockchain platform.
+
